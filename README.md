@@ -191,4 +191,4 @@ This project is for educational and testing purposes only.
 
 **MD. Tanver Rahman Soccho**
 Software Engineer | AIUB Graduate
-[GitHub](https://github.com/) | [LinkedIn](https://linkedin.com/)
+[GitHub](https://github.com/tanversoccho) | [LinkedIn](https://www.linkedin.com/in/tanver-rahman-99a8b8208/)
