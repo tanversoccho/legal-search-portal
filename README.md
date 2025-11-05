@@ -60,7 +60,7 @@ legal-search-portal/
 │   │   ├── Main.jsx          # UI components
 │   │   └── style.css
 │   ├── package.json          # npm configuration
-│   ├── Index.html           
+│   ├── Index.html
 │   └── vite.config.js        # Vite configuration
 │
 ├── docker-compose.yml
