@@ -72,78 +72,89 @@ legal-search-portal/
 
 ## Setup Instructions
 
-### 1. Clone the repository
+Here's your updated setup instructions that simplify the process:
 
+# Legal Document Search Portal — Full Stack Assignment
+
+## Quick Setup (One-Command Installation)
+
+### For Windows:
+```powershell
+# Clone and setup with one command
+git clone https://github.com/tanversoccho/legal-search-portal.git
+cd legal-search-portal
+.\setup.ps1
+```
+
+## After Setup - Run Development Server
+
+Once the setup completes, run:
+```bash
+./run-dev.sh
+```
+
+Then open your browser and go to: **http://localhost:5173**
+
+---
+
+## What the setup script does:
+
+The `setup.ps1` script automates all the manual steps:
+
+1. **Backend Setup**
+   - Creates Python virtual environment
+   - Installs all backend dependencies
+   - Sets up FastAPI with all required packages
+
+2. **Frontend Setup**
+   - Installs Node.js dependencies
+   - Configures React frontend
+   - Sets up Vite development server
+
+3. **Environment Configuration**
+   - Ensures proper ports (Frontend: 5173, Backend: 8000)
+   - Configures API endpoints
+   - Sets up development environment
+
+---
+
+## Manual Setup (Alternative)
+
+If you prefer manual setup, follow these steps:
+
+### 1. Clone Repository
 ```bash
 git clone https://github.com/yourusername/legal-search-portal.git
 cd legal-search-portal
 ```
 
-### 2. Backend setup (FastAPI)
-
-```powershell
+### 2. Backend Setup
+```bash
 cd backend
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Frontend setup (React)
-
-```powershell
-cd ..\frontend
+### 3. Frontend Setup
+```bash
+cd ../frontend
 npm install
 ```
 
----
-
-## Running the Project
-
-### Option A — **Run manually (recommended for Windows)**
-
-#### Backend
-
-```powershell
-cd backend
-.\.venv\Scripts\Activate
-uvicorn app.main:app --reload --port 8000
-```
-
-#### Frontend
-
-```powershell
-cd frontend
-npm run dev
-```
-
-Then open: [http://localhost:5173](http://localhost:5173)
-
-### Option B — **Run via PowerShell script**
-
-In project root:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
-.\run-dev.ps1
-```
-
-This will open two PowerShell windows — one for backend and one for frontend.
-
-### Option C — **Run via Bash script (Linux/Mac/WSL)**
-
+### 4. Run Development
 ```bash
-chmod +x run-dev.sh
+cd ..
 ./run-dev.sh
 ```
+
+### 5. View Application
+Open **http://localhost:5173** in your browser
 
 ---
 
 ## Scripts Summary
 
-### `run-dev.ps1`
-
-* Windows PowerShell script.
-* Opens backend and frontend in separate windows.
 
 ### `run-dev.sh`
 
